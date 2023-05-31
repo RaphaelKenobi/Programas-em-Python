@@ -1,0 +1,28 @@
+###Raphael Pereira da Silva Piloneto###
+###########12221ECP001#################
+#####05-JORNADA-DE-TRABALHO############
+
+x = int(input())  # valor da hora
+y = int(input())  # número de dias
+soma = 0
+def valor_devido():
+    c= soma * x * horas_extra #valor do mano
+    return c
+while y > 0:
+    z = int(input())  # turnos
+    he = int(input()) #horas de entrada
+    hs = int(input()) #horas de saida
+    s = hs - he # descobrir o número de horas
+    if (s<=8):
+        soma += s  # horas trabalhadas
+        y -= 1  # diminui o valor de dias
+        horas_extra = 0
+    elif(s>8):
+        horas_extra = s-8 #descobrir quantas horas extras a mais o rapaz fez
+        valor_da_hora_extra = horas_extra * x * 1,5
+valor_devido()
+print("Horas trabalhadas: {}".format(soma))
+print("Horas extras: {}".format(horas_extra))
+print("Valor devido:{} R$%".format(valor_devido())) # imprime o valor devido formatado com 2 casas decimais
+
+
