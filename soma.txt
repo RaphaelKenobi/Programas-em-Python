@@ -1,2 +1,0 @@
-soma(2, 2, Resultado) :- 
-  Resultado is 2 + 2.

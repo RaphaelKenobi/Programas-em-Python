@@ -7,7 +7,7 @@ def main():
     orcamento = float(input())
     valor_booster = float(input())
     q_desejada = int(input())
-# inicialização das variáveis
+# inicializaÃ§Ã£o das variÃ¡veis
     soma = 0
     x = 0
 
